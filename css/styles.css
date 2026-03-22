@@ -152,6 +152,7 @@ a {
     gap: 5px;
     cursor: pointer;
     z-index: 1001;
+    flex-shrink: 0;
 }
 
 .nav-toggle span {
@@ -601,11 +602,13 @@ textarea.form-control {
     display: flex; 
     align-items: center; 
     gap: 12px; 
+    max-width: calc(100% - 60px);
+    overflow: hidden;
 }
 .header-logo-img { 
     height: 85px; 
     width: auto; 
-    max-width: 350px; 
+    max-width: 100%; 
     object-fit: contain;
     transition: all 0.3s ease;
 }
